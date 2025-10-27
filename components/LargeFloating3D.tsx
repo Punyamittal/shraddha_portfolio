@@ -36,28 +36,23 @@ export default function LargeFloating3D({
     restDelta: 0.001,
   })
 
-  // Position based transforms for larger movements
-  const getPositionTransforms = () => {
-    switch (position) {
-      case 'left':
-        return {
-          x: useTransform(smoothProgress, [0, 0.5, 1], [-600, 100, 800]),
-          rotate: useTransform(smoothProgress, [0, 0.5, 1], [-180, 0, 180]),
-        }
-      case 'right':
-        return {
-          x: useTransform(smoothProgress, [0, 0.5, 1], [600, -100, -800]),
-          rotate: useTransform(smoothProgress, [0, 0.5, 1], [180, 0, -180]),
-        }
-      case 'center':
-        return {
-          x: useTransform(smoothProgress, [0, 0.5, 1], [0, 0, 0]),
-          rotate: useTransform(smoothProgress, [0, 0.5, 1], [0, 360, 720]),
-        }
-    }
-  }
-
-  const transforms = getPositionTransforms()
+  // Pre-calculate all possible transforms at the top level
+  const xLeft = useTransform(smoothProgress, [0, 0.5, 1], [-600, 100, 800])
+  const rotateLeft = useTransform(smoothProgress, [0, 0.5, 1], [-180, 0, 180])
+  
+  const xRight = useTransform(smoothProgress, [0, 0.5, 1], [600, -100, -800])
+  const rotateRight = useTransform(smoothProgress, [0, 0.5, 1], [180, 0, -180])
+  
+  const xCenter = useTransform(smoothProgress, [0, 0.5, 1], [0, 0, 0])
+  const rotateCenter = useTransform(smoothProgress, [0, 0.5, 1], [0, 360, 720])
+  
+  // Select transforms based on position
+  const transforms = position === 'left' 
+    ? { x: xLeft, rotate: rotateLeft }
+    : position === 'right'
+    ? { x: xRight, rotate: rotateRight }
+    : { x: xCenter, rotate: rotateCenter }
+  
   const y = useTransform(smoothProgress, [0, 0.5, 1], [300, 0, -300])
   const opacity = useTransform(smoothProgress, [0, 0.15, 0.5, 0.85, 1], [0, 1, 1, 1, 0])
   const scaleTransform = useTransform(smoothProgress, [0, 0.2, 0.5, 0.8, 1], [0.3, 1, 1, 1, 0.3])
