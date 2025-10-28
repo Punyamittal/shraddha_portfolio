@@ -65,7 +65,7 @@ export default function Mega3DShowcase() {
           <Suspense fallback={null}>
             <Complex3DModels 
               type="crystalCluster"
-              color="#4a9eff"
+              color="#000000"
               rotationSpeed={0.3}
               scale={1.2}
             />
@@ -86,7 +86,7 @@ export default function Mega3DShowcase() {
           <Suspense fallback={null}>
             <Complex3DModels 
               type="floatingRings"
-              color="#ff4a9e"
+              color="#ffffff"
               rotationSpeed={0.25}
               scale={1.2}
             />

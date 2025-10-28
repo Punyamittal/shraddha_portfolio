@@ -9,10 +9,6 @@ import SkillsSection from '@/components/SkillsSection'
 import Scene3DSection from '@/components/Scene3DSection'
 import ScrollReveal3D from '@/components/ScrollReveal3D'
 import Floating3DDecorator from '@/components/Floating3DDecorator'
-import Revolving3DOrbit from '@/components/Revolving3DOrbit'
-import Enhanced3DSection from '@/components/Enhanced3DSection'
-import LargeFloating3D from '@/components/LargeFloating3D'
-import Mega3DShowcase from '@/components/Mega3DShowcase'
 import AboutSection from '@/components/AboutSection'
 import ServicesSection from '@/components/ServicesSection'
 import AwardsSection from '@/components/AwardsSection'
@@ -52,14 +48,14 @@ export default function Home() {
           <Navigation />
           <Hero />
           
-          <ScrollReveal3D type="cube" color="#ffffff" position="left" size={350}>
+          <ScrollReveal3D type="cube" color="#ffffff" position="left" size={200}>
             <TextRevealSection
               title="Design that speaks, creates impact, and drives results."
               darkMode={false}
             />
           </ScrollReveal3D>
           
-          <ScrollReveal3D type="torus" color="#4a9eff" position="right" size={350}>
+          <ScrollReveal3D type="torus" color="#000000" position="right" size={200}>
             <TextRevealSection
               title="From campaigns to communities, creativity is my language."
               darkMode={true}
@@ -74,8 +70,8 @@ export default function Home() {
             <AboutSection />
             <Floating3DDecorator 
               shapes={[
-                { type: 'octahedron', color: '#888888', size: 200, initialPosition: 'left' },
-                { type: 'tetrahedron', color: '#666666', size: 150, initialPosition: 'right' },
+                { type: 'octahedron', color: '#ffffff', size: 120, initialPosition: 'left' },
+                { type: 'tetrahedron', color: '#000000', size: 100, initialPosition: 'right' },
               ]}
             />
           </div>
@@ -86,11 +82,10 @@ export default function Home() {
           
           <div className="relative">
             <ServicesSection />
-            <LargeFloating3D type="floatingRings" color="#aaaaaa" position="right" size={500} scale={1.6} />
             <Floating3DDecorator 
               shapes={[
-                { type: 'cone', color: '#999999', size: 180, initialPosition: 'right' },
-                { type: 'cube', color: '#777777', size: 160, initialPosition: 'left' },
+                { type: 'cone', color: '#000000', size: 120, initialPosition: 'right' },
+                { type: 'cube', color: '#ffffff', size: 110, initialPosition: 'left' },
               ]}
             />
           </div>
@@ -99,19 +94,11 @@ export default function Home() {
           
           <BrandsSection />
           
-          <Mega3DShowcase />
-          
-          <Enhanced3DSection />
-          
-          <div className="relative">
-            <LargeFloating3D type="crystalCluster" color="#ffffff" position="center" size={550} scale={2} />
-            <Revolving3DOrbit type="torus" color="#ffffff" size={250} orbitRadius={400} />
-            <ApproachSection />
-          </div>
+          <ApproachSection />
           
           <TestimonialsSection />
           
-          <ScrollReveal3D type="octahedron" color="#000000" position="center" size={400}>
+          <ScrollReveal3D type="octahedron" color="#000000" position="center" size={200}>
             <TextRevealSection
               title="Every project tells a story. Every design sparks emotion."
               darkMode={false}

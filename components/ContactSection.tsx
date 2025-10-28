@@ -5,11 +5,18 @@ import { useState } from 'react'
 
 export default function ContactSection() {
   const [copied, setCopied] = useState(false)
+  const [copiedPhone, setCopiedPhone] = useState(false)
 
-  const handleCopy = () => {
-    navigator.clipboard.writeText('shraddha@creative.portfolio')
+  const handleCopyEmail = () => {
+    navigator.clipboard.writeText('shraddhachawla1508@gmail.com')
     setCopied(true)
     setTimeout(() => setCopied(false), 2000)
+  }
+
+  const handleCopyPhone = () => {
+    navigator.clipboard.writeText('9899727395')
+    setCopiedPhone(true)
+    setTimeout(() => setCopiedPhone(false), 2000)
   }
 
   return (
@@ -31,28 +38,88 @@ export default function ContactSection() {
             together.
           </h3>
 
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            onClick={handleCopy}
-            className="group relative px-12 py-6 border border-white rounded-full text-xl overflow-hidden"
+          {/* Contact Buttons */}
+          <div className="flex flex-col md:flex-row gap-6 justify-center items-center mb-12">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={handleCopyEmail}
+              className="group relative px-12 py-6 border border-white rounded-full text-xl overflow-hidden"
+            >
+              <span className="relative z-10">
+                {copied ? 'Email Copied!' : 'Copy Email'}
+              </span>
+              <motion.div
+                className="absolute inset-0 bg-white"
+                initial={{ scale: 0 }}
+                whileHover={{ scale: 1 }}
+                transition={{ duration: 0.4 }}
+              />
+              <span className="absolute inset-0 flex items-center justify-center text-black opacity-0 group-hover:opacity-100 transition-opacity">
+                {copied ? 'Copied!' : 'shraddhachawla1508@gmail.com'}
+              </span>
+            </motion.button>
+
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              onClick={handleCopyPhone}
+              className="group relative px-12 py-6 border border-white rounded-full text-xl overflow-hidden"
+            >
+              <span className="relative z-10">
+                {copiedPhone ? 'Phone Copied!' : 'Copy Phone'}
+              </span>
+              <motion.div
+                className="absolute inset-0 bg-white"
+                initial={{ scale: 0 }}
+                whileHover={{ scale: 1 }}
+                transition={{ duration: 0.4 }}
+              />
+              <span className="absolute inset-0 flex items-center justify-center text-black opacity-0 group-hover:opacity-100 transition-opacity">
+                {copiedPhone ? 'Copied!' : '+91 9899727395'}
+              </span>
+            </motion.button>
+          </div>
+
+          {/* Social Links */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.3, duration: 0.8 }}
+            className="flex gap-8 justify-center text-lg"
           >
-            <span className="relative z-10">
-              {copied ? 'Copied!' : 'Get In Touch'}
-            </span>
-            <motion.div
-              className="absolute inset-0 bg-white"
-              initial={{ scale: 0 }}
-              whileHover={{ scale: 1 }}
-              transition={{ duration: 0.4 }}
-            />
-            <span className="absolute inset-0 flex items-center justify-center text-black opacity-0 group-hover:opacity-100 transition-opacity">
-              {copied ? 'Copied!' : 'Let\'s chat!'}
-            </span>
-          </motion.button>
+            <motion.a
+              href="https://instagram.com/shraddha.snaps"
+              target="_blank"
+              rel="noopener noreferrer"
+              whileHover={{ scale: 1.1 }}
+              className="hover:opacity-70 transition-opacity"
+            >
+              Instagram @shraddha.snaps
+            </motion.a>
+            <motion.a
+              href="mailto:shraddhachawla1508@gmail.com"
+              whileHover={{ scale: 1.1 }}
+              className="hover:opacity-70 transition-opacity"
+            >
+              Email
+            </motion.a>
+          </motion.div>
+
+          {/* Contact Info Display */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 0.8 }}
+            className="mt-12 text-sm opacity-60"
+          >
+            <p>shraddhachawla1508@gmail.com</p>
+            <p className="mt-2">+91 9899727395</p>
+          </motion.div>
         </motion.div>
       </div>
     </section>
   )
 }
-

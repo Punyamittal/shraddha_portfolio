@@ -6,7 +6,7 @@ import { motion } from 'framer-motion'
 export default function Hero() {
   const [weather, setWeather] = useState({ temp: '28°', condition: 'CREATIVE' })
   const [location, setLocation] = useState({ 
-    city: 'INDIA',
+    city: 'DELHI, INDIA',
     lat: '28.6139° N',
     lon: '77.2090° E'
   })
@@ -135,8 +135,8 @@ export default function Hero() {
         transition={{ delay: 0.5, duration: 0.8 }}
         className="absolute bottom-12 left-6 md:left-12 text-xs flex gap-4"
       >
-        <a href="#contact" className="cursor-pointer hover:underline">Instagram</a>
-        <a href="#contact" className="cursor-pointer hover:underline">LinkedIn</a>
+        <a href="https://instagram.com/shraddha.snaps" target="_blank" rel="noopener noreferrer" className="cursor-pointer hover:underline">@shraddha.snaps</a>
+        <a href="mailto:shraddhachawla1508@gmail.com" className="cursor-pointer hover:underline">Email</a>
       </motion.div>
 
       {/* Tagline - bottom right */}

@@ -14,28 +14,52 @@ interface Project {
 
 const projects: Project[] = [
   {
-    title: 'Election Marketing Campaign',
-    category: 'Political Campaign',
-    description: 'Led the complete design, creative direction, and marketing strategy for a successful election campaign.',
-    role: 'Design Lead & Creative Director',
-    impact: 'Full campaign execution from concept to delivery',
-    tags: ['Campaign Design', 'Branding', 'Marketing Strategy', 'Visual Identity', 'Print & Digital'],
+    title: 'Griffin Ventures',
+    category: 'Leadership Role',
+    description: 'Leading social media strategy and marketing initiatives for Griffin Ventures, driving brand growth and engagement.',
+    role: 'Social Media and Marketing Head',
+    impact: 'Strategic brand positioning & growth',
+    tags: ['Social Media Strategy', 'Marketing Leadership', 'Brand Management', 'Content Strategy'],
   },
   {
-    title: 'HackHub - Hackathon Social Media',
+    title: 'HackHub',
     category: 'Event Marketing',
-    description: 'Managed all social media strategy and content creation for HackHub hackathon, driving massive engagement.',
-    role: 'Social Media Manager & Content Creator',
-    impact: '500+ Registrations | High Engagement Rate',
-    tags: ['Social Media', 'Content Strategy', 'Event Marketing', 'Community Building', 'Posters & Reels'],
+    description: 'As Chief Marketing Officer, spearheaded all marketing efforts for HackHub hackathon, creating viral content and driving massive registrations.',
+    role: 'CMO (Chief Marketing Officer)',
+    impact: '500+ Registrations | Viral Social Media Campaigns',
+    tags: ['CMO', 'Event Marketing', 'Social Media', 'Content Creation', 'Posters & Reels'],
   },
   {
-    title: 'Personal Instagram Brand',
-    category: 'Personal Branding',
-    description: 'Built and managed my personal Instagram presence with consistent creative content and brand identity.',
-    role: 'Content Creator & Brand Strategist',
-    impact: 'Growing engaged community',
-    tags: ['Content Creation', 'Personal Branding', 'Instagram Strategy', 'Visual Storytelling'],
+    title: 'Commonwealth Students Association - Anika Joshi Campaign',
+    category: 'Political Campaign',
+    description: 'Managed social media and marketing for the election campaign of Anika Joshi at Commonwealth Students Association.',
+    role: 'Campaign Manager - Social Media & Marketing',
+    impact: 'Successful campaign execution with high engagement',
+    tags: ['Election Campaign', 'Social Media Management', 'Political Marketing', 'Strategy'],
+  },
+  {
+    title: 'Griffin 2.0',
+    category: 'Core Team',
+    description: 'Served as a core team member for Griffin 2.0, contributing to key strategic decisions and performance initiatives.',
+    role: 'Core Team Member',
+    impact: 'Strategic contributions & team performance',
+    tags: ['Core Team', 'Strategy', 'Performance', 'Collaboration'],
+  },
+  {
+    title: 'Freelance Marketing Content Creator',
+    category: 'Freelancing',
+    description: 'Creating trending marketing content for social media platforms, helping brands and individuals grow their digital presence.',
+    role: 'Freelance Content Creator & Strategist',
+    impact: 'Viral content & trending posts',
+    tags: ['Freelancing', 'Trending Content', 'Social Media Marketing', 'Digital Strategy'],
+  },
+  {
+    title: 'Indian Youth Diplomacy Forum',
+    category: 'Internship',
+    description: 'Working as an intern managing database operations and organizational workflows for the forum.',
+    role: 'Database Management Intern',
+    impact: 'Efficient database handling & operations',
+    tags: ['Internship', 'Database Management', 'Operations', 'Youth Diplomacy'],
   },
 ]
 
@@ -52,9 +76,9 @@ export default function ProjectsSection() {
           transition={{ duration: 0.8 }}
           className="text-center mb-20"
         >
-          <h2 className="text-5xl md:text-7xl font-light mb-6">Featured Work</h2>
+          <h2 className="text-5xl md:text-7xl font-light mb-6">Experience & Projects</h2>
           <p className="text-xl opacity-70 max-w-3xl mx-auto">
-            From political campaigns to hackathon buzz, I craft experiences that resonate
+            From leadership roles to campaign management, crafting impactful digital experiences
           </p>
         </motion.div>
 
@@ -124,7 +148,7 @@ export default function ProjectsSection() {
           ))}
         </div>
 
-        {/* Coming Soon Section */}
+        {/* Gallery Button */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -132,12 +156,28 @@ export default function ProjectsSection() {
           transition={{ delay: 0.4, duration: 0.8 }}
           className="mt-16 text-center"
         >
-          <div className="inline-block px-6 py-3 border border-black/20 rounded-full">
-            <span className="text-sm">📸 Posters & Reels Gallery Coming Soon</span>
-          </div>
+          <a href="/gallery">
+            <motion.button
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="group relative px-8 py-4 border border-black rounded-full overflow-hidden"
+            >
+              <span className="relative z-10 flex items-center gap-2">
+                📸 View Posters & Reels Gallery
+              </span>
+              <motion.div
+                className="absolute inset-0 bg-black"
+                initial={{ scale: 0 }}
+                whileHover={{ scale: 1 }}
+                transition={{ duration: 0.4 }}
+              />
+              <span className="absolute inset-0 flex items-center justify-center text-white opacity-0 group-hover:opacity-100 transition-opacity gap-2">
+                📸 View Posters & Reels Gallery
+              </span>
+            </motion.button>
+          </a>
         </motion.div>
       </div>
     </section>
   )
 }
-

@@ -34,12 +34,12 @@ export default function Footer() {
             viewport={{ once: true }}
             transition={{ duration: 0.6 }}
           >
-            <h3 className="text-sm tracking-widest mb-4 opacity-50">PRIMARY</h3>
+            <h3 className="text-sm tracking-widest mb-4 opacity-50">NAVIGATE</h3>
             <ul className="space-y-2">
-              <li><a href="#approach" className="hover:underline">Approach</a></li>
-              <li><a href="#clients" className="hover:underline">Clients</a></li>
-              <li><a href="#awards" className="hover:underline">Awards</a></li>
-              <li><a href="#services" className="hover:underline">Services</a></li>
+              <li><a href="#about" className="hover:underline">About</a></li>
+              <li><a href="#projects" className="hover:underline">Experience</a></li>
+              <li><a href="#skills" className="hover:underline">Skills</a></li>
+              <li><a href="#contact" className="hover:underline">Contact</a></li>
             </ul>
           </motion.div>
 
@@ -52,9 +52,24 @@ export default function Footer() {
           >
             <h3 className="text-sm tracking-widest mb-4 opacity-50">SOCIAL</h3>
             <ul className="space-y-2">
-              <li><a href="#" className="hover:underline">Instagram</a></li>
-              <li><a href="#" className="hover:underline">X</a></li>
-              <li><a href="#" className="hover:underline">LinkedIn</a></li>
+              <li>
+                <a 
+                  href="https://instagram.com/shraddha.snaps" 
+                  target="_blank" 
+                  rel="noopener noreferrer" 
+                  className="hover:underline"
+                >
+                  Instagram @shraddha.snaps
+                </a>
+              </li>
+              <li>
+                <a 
+                  href="mailto:shraddhachawla1508@gmail.com" 
+                  className="hover:underline"
+                >
+                  Email
+                </a>
+              </li>
             </ul>
           </motion.div>
 
@@ -66,8 +81,9 @@ export default function Footer() {
             transition={{ delay: 0.2, duration: 0.6 }}
           >
             <h3 className="text-sm tracking-widest mb-4 opacity-50">CONTACT</h3>
-            <p className="mb-4">hey@Shraddha.works</p>
-            <p className="text-sm opacity-50">NEW YORK CITY</p>
+            <p className="mb-2">shraddhachawla1508@gmail.com</p>
+            <p className="mb-4">+91 9899727395</p>
+            <p className="text-sm opacity-50">INDIA</p>
             <p className="text-sm opacity-50">{time}</p>
           </motion.div>
         </div>
@@ -77,13 +93,33 @@ export default function Footer() {
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
           transition={{ delay: 0.3, duration: 0.6 }}
-          className="mt-12 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs opacity-50"
+          className="mt-12 pt-8 border-t border-white/10"
         >
-          <p>© COPYRIGHT 2025 Shraddha WORKS</p>
-          <p>ALL RIGHTS RESERVED</p>
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-xs opacity-50">
+            <p>© COPYRIGHT 2025 SHRADDHA CHAWLA</p>
+            <p>ALL RIGHTS RESERVED</p>
+          </div>
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ delay: 0.5, duration: 0.6 }}
+            className="mt-4 text-center text-xs opacity-40"
+          >
+            <p>
+              Made by{' '}
+              <a
+                href="https://www.linkedin.com/in/punyamittal"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:opacity-100 transition-opacity underline"
+              >
+                Punya Mittal
+              </a>
+            </p>
+          </motion.div>
         </motion.div>
       </div>
     </footer>
   )
 }
-

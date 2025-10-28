@@ -36,9 +36,10 @@ function AnimatedCounter({ number, label, sublabel, delay = 0 }: AwardProps) {
       transition={{ delay, duration: 0.8 }}
       className="text-center"
     >
-      <motion.div className="text-7xl md:text-9xl font-light mb-4">
-        {rounded}
-      </motion.div>
+      <div className="text-7xl md:text-9xl font-light mb-4">
+        <motion.span>{rounded}</motion.span>
+        {label === 'Leadership Roles' && '+'}
+      </div>
       <div className="text-xl md:text-2xl font-light opacity-70">{label}</div>
       {sublabel && (
         <div className="text-sm mt-2 opacity-50">{sublabel}</div>
@@ -59,15 +60,29 @@ export default function AwardsSection() {
           className="text-center mb-20"
         >
           <h2 className="text-4xl md:text-6xl font-light mb-8">
-            The industry has taken note.
+            Results that speak for themselves.
           </h2>
         </motion.div>
 
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 md:gap-8 mb-20">
-          <AnimatedCounter number={26} label="FWA Awards" sublabel="(including Site of the Year)" delay={0.1} />
-          <AnimatedCounter number={11} label="Awwwards" delay={0.2} />
-          <AnimatedCounter number={11} label="Webby Awards" delay={0.3} />
-          <AnimatedCounter number={10} label="CSS Design Awards" sublabel="(including Site of the Day)" delay={0.4} />
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8 mb-20">
+          <AnimatedCounter 
+            number={500} 
+            label="HackHub Registrations" 
+            sublabel="(successful event marketing)" 
+            delay={0.1} 
+          />
+          <AnimatedCounter 
+            number={6} 
+            label="Leadership Roles" 
+            sublabel="(across multiple organizations)" 
+            delay={0.2} 
+          />
+          <AnimatedCounter 
+            number={3} 
+            label="Major Campaigns" 
+            sublabel="(election & brand campaigns)" 
+            delay={0.3} 
+          />
         </div>
 
         <motion.div
@@ -78,15 +93,14 @@ export default function AwardsSection() {
           className="text-center mt-32"
         >
           <h2 className="text-6xl md:text-8xl font-light leading-tight">
-            we
+            I create
             <br />
-            <span className="italic font-serif">stimulate</span>
+            <span className="italic font-serif">impact</span>
             <br />
-            memory.
+            that lasts.
           </h2>
         </motion.div>
       </div>
     </section>
   )
 }
-

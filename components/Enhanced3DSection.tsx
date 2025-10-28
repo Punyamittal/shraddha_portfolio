@@ -48,7 +48,7 @@ export default function Enhanced3DSection() {
   const objects = [
     {
       type: 'cube' as const,
-      color: '#4a9eff',
+      color: '#ffffff',
       x: x1,
       y: y1,
       rotate: rotate1,
@@ -57,7 +57,7 @@ export default function Enhanced3DSection() {
     },
     {
       type: 'torus' as const,
-      color: '#ff4a9e',
+      color: '#000000',
       x: x2,
       y: y2,
       rotate: rotate2,
@@ -66,7 +66,7 @@ export default function Enhanced3DSection() {
     },
     {
       type: 'cone' as const,
-      color: '#4aff9e',
+      color: '#ffffff',
       x: x3,
       y: y3,
       rotate: rotate3,
