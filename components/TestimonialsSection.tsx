@@ -6,22 +6,40 @@ import { ChevronLeft, ChevronRight } from 'lucide-react'
 
 const testimonials = [
   {
-    quote: "Shraddha transformed our brand vision into an immersive experience that exceeded all expectations. Their attention to detail is unmatched.",
-    author: "Sarah Chen",
-    role: "CMO, Tech Innovations",
-    company: "Fortune 500"
+    quote: "Shraddha's creative vision and strategic approach to social media helped us build Y-SoC's brand presence. Her dedication to excellence is remarkable.",
+    author: "Punya Mittal",
+    role: "Founder",
+    company: "Y-SoC"
   },
   {
-    quote: "Working with Shraddha was a game-changer. They brought creativity, technical excellence, and strategic thinking to every aspect of our project.",
-    author: "Michael Rodriguez",
-    role: "Director of Marketing",
-    company: "Global Retail Brand"
+    quote: "As our Social Media and Marketing Head, Shraddha brought innovative strategies and creative content that significantly elevated our brand.",
+    author: "Griffin Ventures Team",
+    role: "Leadership",
+    company: "Griffin Ventures"
   },
   {
-    quote: "The team's ability to blend art and technology is remarkable. They created something that not only looks beautiful but drives real results.",
-    author: "Emily Thompson",
-    role: "VP of Brand Experience",
-    company: "Luxury Fashion House"
+    quote: "Shraddha's marketing expertise as our CMO was instrumental in achieving 500+ registrations for HackHub. Her creativity and execution were exceptional.",
+    author: "HackHub Team",
+    role: "Organizing Committee",
+    company: "HackHub Hackathon"
+  },
+  {
+    quote: "Working with Shraddha on the Commonwealth Students Association election campaign was incredible. Her social media strategy and marketing approach were spot-on.",
+    author: "Anika Joshi",
+    role: "Candidate",
+    company: "Commonwealth Students Association"
+  },
+  {
+    quote: "Shraddha's contribution as a core team member brought fresh perspectives and strong execution to Griffin 2.0. A pleasure to work with.",
+    author: "Griffin 2.0 Team",
+    role: "Core Team",
+    company: "Griffin 2.0"
+  },
+  {
+    quote: "As an intern, Shraddha showed exceptional dedication in handling database management. Her organizational skills and attention to detail stood out.",
+    author: "IYDF Team",
+    role: "Management",
+    company: "Indian Youth Diplomacy Forum"
   },
 ]
 
@@ -47,8 +65,11 @@ export default function TestimonialsSection() {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-6xl font-light mb-4">
-            What People Say
+            Clients & Collaborators
           </h2>
+          <p className="text-lg opacity-70">
+            Organizations and people I've had the privilege to work with
+          </p>
         </motion.div>
 
         <div className="max-w-4xl mx-auto">
@@ -114,4 +135,3 @@ export default function TestimonialsSection() {
     </section>
   )
 }
-
