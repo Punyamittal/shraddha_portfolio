@@ -45,6 +45,30 @@ const projects: Project[] = [
     impact: 'Currently',
     tags: ['Content Curation', 'Brand Communication', 'Audience Outreach', 'Social Engagement', 'Team Collaboration'],
   },
+  {
+    title: 'Social Media Intern, AIC GGSIPU',
+    category: 'Work Experience',
+    description: 'Managed social media content strategy, content planning, and audience engagement across multiple platforms. Created newsletters, event posts, reels, and promotional content for startup and innovation-focused initiatives. Assisted in content shoots, startup collaborations, lead generation, and outreach activities while supporting events such as Spark and OriginXAI through digital branding and communication efforts.',
+    role: 'Social Media Intern',
+    impact: 'Experience Added',
+    tags: ['Content Strategy', 'Audience Engagement', 'Digital Branding', 'Lead Generation', 'Startup Outreach'],
+  },
+  {
+    title: 'Anchor, Anugoonj',
+    category: 'Work Experience',
+    description: 'Hosted and anchored events, engagement sessions, and public interactions while maintaining audience engagement and stage coordination. Assisted in event communication, audience management, and creating an energetic and professional environment during organizational activities and programs.',
+    role: 'Anchor',
+    impact: 'Experience Added',
+    tags: ['Event Hosting', 'Public Speaking', 'Audience Management', 'Stage Coordination', 'Event Communication'],
+  },
+  {
+    title: 'Operations Handler, FoundersMixture',
+    category: 'Work Experience',
+    description: 'Managed operational coordination, communication, and execution of day-to-day activities to ensure smooth workflow and event management. Assisted in team coordination, outreach, scheduling, and handling operational tasks related to startup networking, collaborations, and community engagement initiatives.',
+    role: 'Operations Handler',
+    impact: 'Experience Added',
+    tags: ['Operations Coordination', 'Team Collaboration', 'Scheduling', 'Outreach', 'Community Engagement'],
+  },
 ]
 
 export default function ProjectsSection() {

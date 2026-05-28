@@ -19,8 +19,6 @@ import TestimonialsSection from '@/components/TestimonialsSection'
 import ContactSection from '@/components/ContactSection'
 import Footer from '@/components/Footer'
 import SmoothScroll from '@/components/SmoothScroll'
-import CustomCursor from '@/components/CustomCursor'
-import MouseFollower from '@/components/MouseFollower'
 import ScrollProgress from '@/components/ScrollProgress'
 import BackToTop from '@/components/BackToTop'
 import LoadingScreen from '@/components/LoadingScreen'
@@ -42,8 +40,6 @@ export default function Home() {
       <LoadingScreen />
       <ScrollProgress />
       <SmoothScroll>
-        <CustomCursor />
-        <MouseFollower />
         <main className="relative">
           <Navigation />
           <Hero />
