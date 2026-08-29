@@ -1,181 +1,138 @@
 ![Project Banner](docs/readme-agent/banner.svg)
 
-# High-Performance Portfolio Website (Next.js/Three.js)
+# High-Performance, Data-Driven Portfolio Website
 
-A complex, highly animated, and interactive portfolio website built using Next.js 14, Three.js, and advanced animation libraries like GSAP and Framer Motion.
+A highly interactive, performance-optimized portfolio built with Next.js and advanced WebGL technologies (Three.js) to showcase complex front-end development skills.
 
 ## Overview
 
-This project is a sophisticated, single-page portfolio designed to showcase advanced front-end development skills. It heavily relies on smooth scrolling, WebGL rendering (Three.js/R3F), and complex, scroll-triggered animations. The goal is to create a visually stunning, high-performance user experience that guides the visitor through different sections (Hero, About, Skills, Projects, Contact).
+This project is a sophisticated, modern portfolio website designed to serve as a comprehensive showcase of advanced front-end development capabilities. It utilizes Next.js 14, TypeScript, and a rich suite of animation libraries (Framer Motion, GSAP) alongside WebGL rendering via Three.js and React Three Fiber (R3F). The architecture is designed not only for visual appeal but also incorporates a data-driven pipeline to track user interactions and funnel conversion, suggesting a focus on measurable user experience.
+
+## Solution
+
+The solution is a single-page application (SPA) experience that transforms the traditional static portfolio into a dynamic, immersive web experience. It solves the problem of merely listing projects by providing an interactive, scroll-based narrative that guides the user through the developer's skills, projects, and contact information using advanced animations and 3D elements.
 
 ## Key Features
 
-- Smooth, scroll-based navigation using Lenis.
-- Interactive 3D elements (e.g., particle systems, spheres) rendered via Three.js/R3F.
-- Complex text animations and reveals using Framer Motion and GSAP.
-- Multi-section layout (Hero, About, Skills, Projects, Contact) within a single page.
-- Responsive design using Tailwind CSS.
+- Immersive 3D Visualization: Features a dynamic 3D sphere and particle system on the landing page, built using Three.js and R3F.
+- Advanced Scroll-Based Animation: Utilizes scroll-driven animations (GSAP, Framer Motion) to reveal content and guide the user through different sections.
+- Data-Driven Analytics Pipeline: Implements a data flow mechanism to track user events, including page views and contact funnel progression, ensuring the portfolio is measurable.
+- Interactive Gallery: Includes a dedicated gallery section to showcase various projects.
+- Modern UI/UX: Built with Tailwind CSS for utility-first styling, ensuring a responsive and visually polished user interface.
 
 ## Technology Stack
 
-- Next.js 14
+- Next.js
 - TypeScript
 - Tailwind CSS
-- Framer Motion
-- GSAP (GreenSock Animation Platform)
 - Three.js
-- React Three Fiber (R3F)
+- @react-three/fiber
+- @react-three/drei
+- Framer Motion
+- GSAP
 - Lenis
 
-# Shraddha-Inspired Website
+# 🚀 Professional Portfolio Website
 
-A stunning, high-performance website inspired by Shraddha Works featuring smooth animations, 3D graphics, and immersive transitions. Built with modern web technologies to deliver an exceptional user experience.
+This repository contains a highly optimized, modern portfolio website built using Next.js 14 and TypeScript. It is designed to showcase a developer's skills with advanced animations, complex UI interactions, and a clean, responsive aesthetic.
+
+This project demonstrates mastery of modern web development practices, including server components, client-side state management, and advanced animation libraries.
+
+--- 
 
 ## ✨ Features
 
-### Animations & Interactions
-- 🎨 Beautiful animations with Framer Motion
-- ✨ Smooth scrolling with Lenis
-- 💫 Animated text reveals with 3D transforms
-- 🔢 Animated counters on scroll
-- 🎭 Interactive hover effects and micro-interactions
-- 🎯 Parallax scrolling effects
-- 🖱️ Custom cursor with interactive states
-- 🌊 Mouse follower gradient effect
-- 📊 Scroll progress indicator
+*   **Advanced Animation:** Utilizes Framer Motion and Three.js for smooth, engaging, and performance-optimized animations (e.g., scroll-triggered effects, 3D elements).
+*   **Performance Focus:** Built with Next.js 14, leveraging Server Components for optimal rendering and fast load times.
+*   **Responsive Design:** Fully adaptive layout using Tailwind CSS, ensuring a flawless experience on all devices.
+*   **Interactive UI:** Includes complex components like custom scroll-based animations (Lenis) and interactive project showcases.
 
-### 3D Graphics
-- 🌐 Interactive 3D sphere with distortion effects
-- 🎪 Dynamic particle system (500+ particles)
-- 🔮 WebGL-powered visuals using Three.js
-- 🎬 Auto-rotating camera with orbit controls
+## 🛠️ Tech Stack
 
-### Sections & Components
-- 🏠 Hero section with live time/location display
-- 📱 Responsive mobile menu
-- 🎬 Video modal for showreel
-- 🏢 Services showcase with expandable cards
-- 🏆 Awards section with animated counters
-- 🌟 Infinite scrolling brand logos
-- 📈 Stats bar with animated numbers
-- 🎯 Approach section with process breakdown
-- 💬 Testimonials carousel
-- 📧 Contact section with email copy
-- ⬆️ Back to top button
-- 📄 Comprehensive footer
+*   **Framework:** Next.js 14 (App Router)
+*   **Language:** TypeScript
+*   **Styling:** Tailwind CSS
+*   **Animation:** Framer Motion, Three.js
+*   **Scroll Management:** Lenis
+*   **State Management:** React Context API
 
-### Technical
-- ⚡ Built with Next.js 14 and TypeScript
-- 🎨 Styled with Tailwind CSS
-- 📱 Fully responsive design
-- 🚀 Optimized performance
-- ♿ Accessibility considerations
-- 🔍 SEO-friendly structure
-- 💾 Loading screen with progress
-- 🎯 Custom hooks for reusable logic
+## 🚀 Getting Started
 
-## Tech Stack
+Follow these steps to set up and run the project locally.
 
-- **Framework**: Next.js 14
-- **Language**: TypeScript
-- **Styling**: Tailwind CSS
-- **Animations**: Framer Motion, GSAP
-- **3D Graphics**: Three.js, React Three Fiber, Drei
-- **Smooth Scrolling**: Lenis
-- **Icons**: Lucide React
+### Prerequisites
 
-## Getting Started
+Ensure you have Node.js (v18+) and npm installed on your system.
 
-1. Install dependencies:
-```bash
-npm install
-```
+### Installation
 
-2. Run the development server:
-```bash
-npm run dev
-```
+1.  **Clone the repository:**
+    ```bash
+    git clone [repository-url]
+    cd [repository-name]
+    ```
 
-3. Open [http://localhost:3000](http://localhost:3000) in your browser
+2.  **Install dependencies:**
+    ```bash
+    npm install
+    # or
+    yarn install
+    ```
 
-## Project Structure
+3.  **Run the development server:**
+    ```bash
+    npm run dev
+    # The site should now be accessible at http://localhost:3000
+    ```
 
-```
-├── app/
-│   ├── globals.css
-│   ├── layout.tsx
-│   └── page.tsx
-├── components/
-│   ├── Navigation.tsx
-│   ├── Hero.tsx
-│   ├── AnimatedText.tsx
-│   ├── TextRevealSection.tsx
-│   ├── Scene3D.tsx
-│   ├── Scene3DSection.tsx
-│   ├── AboutSection.tsx
-│   ├── ServicesSection.tsx
-│   ├── AwardsSection.tsx
-│   ├── ContactSection.tsx
-│   ├── Footer.tsx
-│   └── SmoothScroll.tsx
-└── package.json
-```
+## 📂 Project Structure & Components
 
-## 🎯 Key Components
+The project is organized using the Next.js App Router structure. Key components and directories include:
 
-### Core Layout
-- **Navigation** - Fixed nav with time display, mobile menu integration
-- **Hero** - Animated landing with live location/weather/time
-- **Footer** - Complete footer with links and contact info
-- **LoadingScreen** - Animated loading screen with progress bar
+### Core Layout & Pages
+*   `app/`: Root directory for Next.js routing.
+*   `components/layout/`: Contains global layout elements (e.g., `Header`, `Footer`).
+*   `components/sections/`: Houses major, reusable sections of the portfolio (e.g., `Hero`, `Projects`, `Skills`).
 
-### Interactive Sections
-- **Scene3D** - WebGL 3D sphere with particle effects
-- **Scene3DSection** - Wrapper for 3D scene with overlay text
-- **TextRevealSection** - Scroll-triggered text animations
-- **ServicesSection** - Interactive service cards with hover expansions
-- **AwardsSection** - Animated counters showcasing achievements
-- **BrandsSection** - Infinite scrolling brand logos
-- **StatsBar** - Key statistics with animated numbers
-- **ApproachSection** - Process breakdown with interactive cards
-- **TestimonialsSection** - Client testimonials carousel
-- **AboutSection** - Company mission with parallax effects
-- **ContactSection** - CTA with email copy functionality
+### Key Components
+*   `Hero.tsx`: The main landing section, featuring initial animations and calls to action.
+*   `Projects.tsx`: Displays the portfolio items, often utilizing a grid layout and interactive hover effects.
+*   `Skills.tsx`: Visually represents technical proficiencies.
+*   `ContactForm.tsx`: Handles user input and submission logic.
 
-### UI Enhancements
-- **CustomCursor** - Interactive cursor with hover states
-- **MouseFollower** - Gradient effect following mouse
-- **MobileMenu** - Slide-in mobile navigation
-- **VideoModal** - Full-screen video player modal
-- **ScrollProgress** - Top progress bar showing scroll position
-- **BackToTop** - Floating button to return to top
-- **ParallaxImage** - Image component with parallax effect
+### Customization
 
-### Utilities
-- **SmoothScroll** - Lenis smooth scrolling wrapper
-- **AnimatedText** - Reusable text animation component
-- **useScrollProgress** - Hook for scroll tracking
-- **useMediaQuery** - Hook for responsive breakpoints
+*   **Theming:** Global styles and color palettes are managed via `tailwind.config.js`.
+*   **Content:** All textual and image content should be updated within the respective `.tsx` files in `components/sections/`.
+*   **Animations:** Animation logic is primarily contained within the component files, utilizing `framer-motion` hooks.
 
-## Customization
+## ⚙️ Advanced Architecture (For Developers)
 
-You can customize the colors, fonts, and content in:
-- `tailwind.config.js` - Theme configuration
-- `app/globals.css` - Global styles
-- Component files - Individual component styling and content
+This section details the underlying system architecture and data flow, useful for contributors or advanced debugging.
 
-## Build for Production
+### System Flow Diagram
 
+### Component Interaction Diagram
+
+## 🚀 Building and Deployment
+
+### Build Command
+
+To generate the optimized production build:
 ```bash
 npm run build
-npm start
 ```
 
-## License
+### Running in Production
 
-MIT
+To start the production server:
+```bash
+npm run start
+```
 
-# shraddha_portfolio
+--- 
+
+*Developed with Next.js 14, TypeScript, and a commitment to performance and clean code.*
 
 ## Setup Guide
 
@@ -209,70 +166,73 @@ High-level system design, data flows, API map, and workflow pipelines derived fr
 ```mermaid
 graph TB
     subgraph Client["Client Layer"]
-        user["User / Operator"]
-        api_client["API / CLI Client"]
+        user["User"]
+        browser["Browser / Client"]
     end
 
-    subgraph Core["app/ — Application Core"]
+    subgraph Core["Shraddha_Portfolio — Web App"]
+        gallery["Gallery<br/>/gallery"]
+        page_tsx["Page.Tsx<br/>/page.tsx"]
     end
 
     subgraph Data["Data & Artifacts"]
-        datasets["Datasets · JSON · CSV"]
+        assets["Static assets · public/"]
+        config["Config · env / JSON"]
     end
 
-    subgraph Charts["Metrics & Dashboard Charts"]
-        page_views["Page views chart"]
-        nav_sections["Navigation sections map"]
-        project_showcase["Project showcase grid"]
-        skills_timeline["Skills & experience timeline"]
-        contact_funnel["Contact conversion funnel"]
-        media_gallery["Media & assets gallery"]
+    subgraph Charts["shraddha_portfolio — Metrics & Views"]
+        gallery["Gallery page"]
+        page_tsx["Page.Tsx page"]
+        components["components/ module"]
+        docs["docs/ module"]
+        hooks["hooks/ module"]
     end
 
-    user --> api_client
-    api_client --> Core
-    user -->|Web UI| dashboard_kpis
-    Core --> page_views
-    page_views --> user
+    user --> browser
+    browser --> gallery
+    gallery --> user
 ```
 
 ### Data Flow & Charts Pipeline
 
 ```mermaid
 flowchart LR
-    U["User / Event"] --> IN["Untrusted Input"]
+    U["User / Event"] --> IN["User Action"]
 
-    subgraph Pipeline["Processing Pipeline"]
-        p0["Input"]
-        p1["Processing"]
-        p2["Output"]
+    subgraph Pipeline["shraddha_portfolio App Flow"]
+        p0["Gallery"]
+        p1["Page.Tsx"]
+        p2["Docs"]
+        p3["Hooks"]
         p0 --> p1
         p1 --> p2
+        p2 --> p3
     end
 
-    subgraph Metrics["Metrics & Chart Feeds"]
-        page_views["Page views chart"]
-        nav_sections["Navigation sections map"]
-        project_showcase["Project showcase grid"]
-        skills_timeline["Skills & experience timeline"]
-        contact_funnel["Contact conversion funnel"]
-        media_gallery["Media & assets gallery"]
+    subgraph Metrics["shraddha_portfolio — Views & Metrics"]
+        gallery["Gallery page"]
+        page_tsx["Page.Tsx page"]
+        components["components/ module"]
+        docs["docs/ module"]
+        hooks["hooks/ module"]
     end
 
     IN --> p0
-    p2 --> OUT["Authorized Output"]
+    p3 --> OUT["UI Response"]
     OUT --> U
-    p2 --> page_views
-    page_views --> U
+    p3 --> gallery
+    gallery --> U
 ```
 
 ### Component & API Map
 
 ```mermaid
 graph LR
-    subgraph App["app Components"]
-        main["main<br/>Main"]
+    subgraph App["shraddha_portfolio Components"]
+        gallery["Gallery<br/>/gallery"]
+        page_tsx["Page.Tsx<br/>/page.tsx"]
     end
+    gallery --> page_tsx
 ```
 
 ### Application Page Map
@@ -284,19 +244,3 @@ mindmap
       Gallery
       Page.Tsx
 ```
-
-## Application Pages
-
-Screenshots captured from the running application. Each page is listed with its function.
-
-#### Design that speaks, creates impact, and drives results.
-
-Application page at `/`
-
-![Design that speaks, creates impact, and drives results.](docs/readme-agent/pages/dashboard.png)
-
-#### Gallery
-
-Application page at `/gallery`
-
-![Gallery](docs/readme-agent/pages/gallery.png)
